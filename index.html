@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>3D Model AR</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+    <section>
+        <h1>3D Model AR</h1>
+        <model-viewer
+            src="chog_ar.glb"
+            ios-src="chog_ar.usdz"
+            alt="A 3D model"
+            auto-rotate
+            camera-controls
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+        ></model-viewer>
+    </section>
+</body>
+</html>
